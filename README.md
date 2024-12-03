@@ -61,7 +61,7 @@ Mintly is a web-based application for tracking personal expenses. This project u
 3. Run the application:
     
     
-    mvn spring-boot:run
+    ./mvnw spring-boot:run
     
    
     

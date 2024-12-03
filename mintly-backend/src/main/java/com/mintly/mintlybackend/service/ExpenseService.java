@@ -36,6 +36,8 @@ public class ExpenseService {
 
     public Expense updateExpense(Long id, Expense expense){
         Optional<Expense> optionalExpense = expenseRepository.findById(id);
+        System.out.println("optionalExpense: " + optionalExpense);  // Debugging line
+    
         if(optionalExpense.isPresent()){
             Expense existingExpense = optionalExpense.get();
             existingExpense.setCategory(expense.getCategory());
